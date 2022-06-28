@@ -1,0 +1,101 @@
+*{
+    max-width: 1200px;
+    margin:5px;
+    padding: 5px;
+    box-sizing:border-box;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background-color: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background-color: aquamarine;
+        display: flex;
+        flex-flow: nowrap;
+    }
+        .nombre{
+            background-color: chartreuse;
+            flex:1 1 auto;
+        }
+        .desplegable{
+            background-color: chocolate;
+            flex:4 1 auto;
+        }
+        .redes{
+            background-color: crimson;
+            flex:1 1 auto;
+        }
+    .texto{
+        background-color: blueviolet;
+    }
+        h1{
+            background-color: rgb(192, 38, 49);
+        }
+.seccion{
+    background-color: #000;
+    display: flex;
+}
+    .articulos{
+        background-color: darkred;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+    }
+        .articulo1{
+            background-color: aliceblue;
+            flex: 1 1 40%;
+        }
+        .articulo2{
+            background-color: antiquewhite;
+            flex: 1 1 40%;
+        }
+        .articulo3{
+            background-color: rgb(231, 204, 167);
+            flex: 1 1 40%;
+        }
+        .articulo4{
+            background-color: cornsilk;
+            flex: 1 1 40%;
+        }
+        .navegacion{
+            background-color: blue;
+            flex: 1 1 100%;
+        }
+    .aside{
+        background-color: crimson;
+        flex:1 1 auto;
+    }
+        .publicidad{
+            background-color: blueviolet;
+        }
+.footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+}
+    .piepagina{
+        background-color: coral;
+        width: 400px;
+
+    }
+@media all and (max-width:768px){
+    .seccion{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+ }
+@media all and (max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+    .aside{
+        flex-direction: column;
+    }
+}
