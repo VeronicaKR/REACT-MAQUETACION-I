@@ -1,0 +1,203 @@
+*{
+    max-width: 1200px;
+    margin:5px;
+    padding: 0px;
+    box-sizing:border-box;
+    
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno{
+    padding: 0 50px;
+}
+.header{
+    background: url(imagenes/header.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        display: flex;
+        flex-flow: nowrap;   
+    }
+        .nombre{
+            background:no-repeat center/50% url(imagenes/logo.png);
+            flex:1 1 auto;         
+        }
+        .desplegable{
+            flex:4 1 auto;
+            }
+                .desplegable a{
+                    text-decoration: none;
+                    padding: 0 10px;
+                 
+                    }
+                .desplegable a:hover{
+                    color: #f3f0f0;
+                }
+        .redes{
+            flex:1 1 auto;
+            font-size: 18px;
+            padding: 0 5px;
+            display: flex;
+        }
+    .texto{
+        background: rgba(0,0, 0,.1);
+        text-align: center;
+        margin: 200px;   
+          
+    }
+        .texto h1{
+            color:coral;  
+           
+                 }
+.seccion{
+     display: flex;
+    
+}
+    .articulos{
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        color: rgb(2, 2, 3);
+        background:rgb(241, 227, 227);
+        margin: 10px 10px 0 0px;
+        
+              
+    }
+        .articulos p{
+            column-count: 2;
+            column-rule: 20px ;
+            margin:10px 10px 20px 10px;
+        }
+        .articulos a{
+            text-decoration: none;
+        }
+    h3{
+        color:#faf6f6;
+        padding: 10 px 0;
+        margin-top: -160px;
+        width:100%;
+    }
+    h2{
+        background-color: rgb(245, 92, 31);
+        color: #f3f0f0;
+    }
+    h4{
+        color: black;
+        text-align: center;
+    }
+    h5{
+        text-align: center;
+        justify-content: center;
+    }
+
+        .articulo1{
+            background-color: rgb(250, 246, 241);
+            flex: 1 1 45%;
+           
+            }
+            .articulo1 .imagen{
+                width: auto;
+                height: 400px;
+                object-fit: contain;
+                margin:0px 10px 20px 0px;
+               
+                
+                }
+            .articulo1 img{
+                max-width: 100%;
+                max-height: 100%;
+                
+            }
+        .articulo2  {
+            background-color: rgb(250, 246, 241);
+            flex: 1 1 45%;
+        }
+            .articulo2 .imagen{
+                width: auto;
+                height: 400px;
+                object-fit: contain;
+                margin:0px 10px 20px 0px;
+            }
+            .articulo2 img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .articulo3{
+            background-color: rgb(250, 246, 241);
+            flex: 1 1 45%;
+        }
+            .articulo3 .imagen{
+                width: auto;
+                height: 400px;
+                object-fit: contain;
+                margin:0px 10px 20px 0px;
+            }
+            .articulo3 img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .articulo4{
+            background-color: rgb(250, 246, 241);
+            flex: 1 1 45%;
+        }
+            .articulo4 .imagen{
+                width: auto;
+                height: 400px;
+                object-fit: contain;
+                margin:0px 10px 20px 0px;
+            }
+            .articulo4 img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .navegacion{
+            background-color: rgb(234, 234, 240);
+            flex: 1 1 100%;
+        }
+    .aside{
+        background-color: rgb(250, 241, 231);
+        flex:1 1 auto;
+        margin:10px 0px 0px 0px;
+    }
+        .publicidad{
+            width: auto;
+            height: auto;
+            
+         }
+.footer{
+    background-color: rgb(248, 234, 217);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+    .piepagina{
+        background-color: rgb(250, 246, 241);
+        width: auto;
+        }
+            .h5{
+                justify-content: center;
+                
+            }
+           
+@media all and (max-width:768px){
+    .seccion{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+ }
+@media all and (max-width:600px){
+    .articulos{
+        flex-direction: column;
+    }
+    .aside{
+        flex-direction: column;
+    }
+}

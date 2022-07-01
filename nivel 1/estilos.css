@@ -9,43 +9,33 @@
     flex-flow: column nowrap;
 }
 .header{
-    background: url(imagenes/header.jpg);
-    background-position: center;
-    background-attachment: contain;
-    background-size: cover;
+    background-color: #000;
     display: flex;
     flex-flow: column nowrap;
 }
     .menu{
+        background-color: aquamarine;
         display: flex;
-        flex-flow: nowrap;   
+        flex-flow: nowrap;
     }
         .nombre{
-            background:no-repeat center/50% url(imagenes/logo.png);
-            flex:1 1 auto;         
+            background-color: chartreuse;
+            flex:1 1 auto;
         }
         .desplegable{
+            background-color: chocolate;
             flex:4 1 auto;
-            }
-                .desplegable a{
-                    text-decoration: none;
-                    padding: 0 10px;
-                    }
-                .desplegable a:hover{
-                    color: #f3f0f0;
-                }
+        }
         .redes{
+            background-color: crimson;
             flex:1 1 auto;
-            font-size: 18px;
-            padding: 0 5px;
-            display: flex;
         }
     .texto{
-        background: rgba(0,0, 0,.1);
+        background-color: blueviolet;
     }
-        .texto h1{
-            color:coral
-                 }
+        h1{
+            background-color: rgb(192, 38, 49);
+        }
 .seccion{
     background-color: #000;
     display: flex;
@@ -57,7 +47,7 @@
         flex-flow: row wrap;
     }
         .articulo1{
-            background-color: rgb(1, 94, 175);
+            background-color: aliceblue;
             flex: 1 1 40%;
         }
         .articulo2{
