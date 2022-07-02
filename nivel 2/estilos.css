@@ -34,7 +34,7 @@
                 .desplegable a{
                     text-decoration: none;
                     padding: 0 10px;
-                 
+                    
                     }
                 .desplegable a:hover{
                     color: #f3f0f0;
@@ -190,7 +190,21 @@
         flex-direction: column;
     }
     .menu{
+        flex-direction: row;
+        align-items: center;
+        font-size: 10px;
+    }
+    .header{
         flex-direction: column;
+        align-items: center;
+    }
+    .redes{
+        font-size: 10px;
+    }
+    .nombre{
+        background:center/200% url(imagenes/logo.png);
+        background-attachment: contain;
+        object-fit: contain;
     }
  }
 @media all and (max-width:600px){
@@ -199,5 +213,15 @@
     }
     .aside{
         flex-direction: column;
+    }
+    .redes{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .desplegable{
+        flex-direction: column;
+        display: flex;
     }
 }
